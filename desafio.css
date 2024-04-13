@@ -1,0 +1,102 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.header-content {
+  margin-top: 20px;
+}
+
+.card {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #333;
+}
+
+.section {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Estilos layout responsivo */
+
+.container.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .container.content {
+    flex-direction: row;
+  }
+
+  .card {
+    width: 33.33%;
+  }
+}
+
+/* Estilo modo noturno */
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .card {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+.dark-mode .card h2,
+.dark-mode .card p {
+  color: #fff;
+}
+
+.dark-mode .section {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+.dark-mode .section h2,
+.dark-mode .section p,
+.dark-mode .section li {
+  color: #fff;
+}
+
+.dark-mode .footer {
+  background-color: #111;
+  color: #fff;
+}

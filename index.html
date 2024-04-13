@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light-mode">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Tolkien</title>
+  <link rel="stylesheet" href="desafio.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <!-- Botão Modo Noturno com Ícone -->
+  <button id="toggle-mode-btn" onclick="toggleMode()"><i class="fas fa-lightbulb"></i></button>
+
+  <header class="header">
+    <div class="container">
+        <img src="./Imagens/o-senhor-dos-anéis-tolkien.jpg" alt="O Senhor dos Anéis" />
+      <div class="header-content">
+        <h1>J.R.R. Tolkien</h1>
+        <p>Conheça mais sobre a vida e obras do renomado autor.</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container content">
+    <!-- Vida -->
+    <div class="card">
+      <a href="#vida">
+        <h2>Vida</h2>
+        <p>Conheça a vida de J.R.R. Tolkien</p>
+      </a>
+    </div>
+
+    <!-- Obras -->
+    <div class="card">
+      <a href="#obras">
+        <h2>Obras</h2>
+        <p>Descubra as principais obras de Tolkien</p>
+      </a>
+    </div>
+
+    <!-- Curiosidades -->
+    <div class="card">
+      <a href="#curiosidades">
+        <h2>Curiosidades</h2>
+        <p>Explore curiosidades sobre Tolkien</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Seções -->
+  <div class="container">
+    <!--  Vida -->
+    <div id="vida" class="section">
+      <h2>Vida de Tolkien</h2>
+      <p>John Ronald Reuel Tolkien, nascido em 3 de janeiro de 1892, na África do Sul, foi um renomado filólogo, professor universitário e escritor britânico. Ele é mais conhecido por ser o autor de "O Senhor dos Anéis", uma das obras mais importantes da literatura fantástica.</p>
+      <p>Tolkien cresceu na Inglaterra após a morte de seu pai e sua mãe, e foi criado por um padre católico. Ele mostrou interesse em línguas desde cedo e desenvolveu seu próprio idioma élfico ainda na adolescência.</p>
+      <p>Durante a Primeira Guerra Mundial, Tolkien serviu no Exército Britânico e foi influenciado por suas experiências de guerra ao criar os cenários e conflitos de suas obras literárias.</p>
+      <p>Tolkien faleceu em 2 de setembro de 1973, deixando um legado duradouro na literatura e na cultura popular.</p>
+    </div>
+
+    <!--  Obras -->
+    <div id="obras" class="section">
+      <h2>Obras de Tolkien</h2>
+      <p>Algumas das principais obras de J.R.R. Tolkien incluem:</p>
+      <ul>
+        <li><strong>O Hobbit:</strong> Publicado em 1937, este é o primeiro livro de Tolkien ambientado na Terra Média e narra a jornada do hobbit Bilbo Bolseiro.</li>
+        <li><strong>O Senhor dos Anéis:</strong> Esta trilogia épica, composta por "A Sociedade do Anel", "As Duas Torres" e "O Retorno do Rei", foi publicada entre 1954 e 1955 e é considerada uma das obras-primas da literatura moderna.</li>
+        <li><strong>O Silmarillion:</strong> Publicado postumamente em 1977, este livro conta a mitologia da Terra Média, desde a criação do mundo até o fim da Terceira Era.</li>
+        <li><strong>Contos Inacabados:</strong> Coletânea de textos incompletos e fragmentos da obra de Tolkien, publicada em 1980.</li>
+        <li><strong>Os Filhos de Húrin:</strong> Romance baseado em uma história contida no "Silmarillion", editado e publicado por seu filho Christopher Tolkien em 2007.</li>
+      </ul>
+    </div>
+
+    <!-- Curiosidades -->
+    <div id="curiosidades" class="section">
+      <h2>Curiosidades sobre Tolkien</h2>
+      <ul>
+        <li>Tolkien criou línguas fictícias completas, como o élfico e o khuzdul (a língua dos anões).</li>
+        <li>Ele era um amigo próximo de C.S. Lewis, autor de "As Crônicas de Nárnia", e fazia parte de um grupo de escritores conhecido como os "Inklings".</li>
+        <li>O Senhor dos Anéis foi adaptado para uma trilogia de filmes extremamente popular dirigida por Peter Jackson, que ganhou inúmeros prêmios, incluindo 17 Oscars.</li>
+        <li>Além de sua obra literária, Tolkien era um acadêmico respeitado e lecionou na Universidade de Oxford.</li>
+        <li>A casa de Tolkien, em Oxford, é conhecida como "A Casa do Hobbit" devido à sua semelhança com as tocas dos hobbits descritas em seus livros.</li>
+        <li>Ele começou a escrever "O Hobbit" como uma história para seus filhos, mas foi incentivado a publicá-la após ser descoberta por um editor.</li>
+        <li>A história de Beren e Lúthien, descritas na obra "O Silmarillion", foi beaseada na própria história de amor de Tolkien e sua esposa Edith, levando a inspiração para que Tlkien escrevesse "O Senhor dos Anéis".</li>
+
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p> Carlos Paulo Rubim Ferreira Silva <strong>PDITA052</strong></p>
+    </div>
+  </footer>
+
+  <!-- JavaScript para alternar o modo de cor noturno -->
+  <script>
+    function toggleMode() {
+      const body = document.querySelector('body');
+      body.classList.toggle('light-mode');
+      body.classList.toggle('dark-mode');
+    }
+  </script>
+
+</body>
+</html>
